@@ -53,22 +53,25 @@ table {
 	--pink: #DC6BAD;
 	--light-grey: #D5D5D5;
 	--white: white;
-	--dark: #272525;
-	--bs-secondary-rgb: rgb(39, 37, 37);
+	--dark: #272525;	
+	
 }
+
+
 
 h1, h2, h3, h4, h5, h6 {
     font-family: Consolas,monaco,monospace;
 }
 
 html {
-    height: 100%;
+    height: -webkit-fill-available;	
 }
 body {
     font-family: Arial, Helvetica, sans-serif;
     background: linear-gradient(#707070 0%, #494949 0%, #434343 9.2%, #121312 36.4%, #242121 69.86%, #000 100%);
     background-attachment: fixed;
     color: var(--white);
+	
 }
 
 .text-primary {
@@ -82,33 +85,147 @@ a {
     text-decoration: none!important;
 }
 a:hover {
-    color: var(--light-grey)!important;
+    color: var(--light-grey);
 }
 
 .link-secondary {
-	color: var(--pink)!important;
+	color: var(--pink);
 }
 
 /*nav styles*/
 
-.bg-secondary {
-	color: var(--dark)!important;
+.navbar {
+	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.72));
+}
+.nav-link {
+	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.6));
+}
+.navbar-dark {
+    --bs-navbar-color: var(--light-grey);
+    --bs-navbar-hover-color: var(--white);
+    --bs-navbar-active-color: var(--pink);
+    --bs-navbar-brand-color: var(--light-grey);
+    --bs-navbar-brand-hover-color: var(--white);
+}
+.bg-dark {
+	background-color: var(--dark)!important;
+}
+.navbar-brand svg {
+	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.6));
 }
 
-.active {
-	color: var(--pink)!important;
+/*hamb menu source: https://www.youtube.com/watch?v=_MrShB9fh7U */
+.navbar-toggler {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transition: .5s ease-in-out;
 }
 
-.bg-secondary {
-	--bs-secondary-rgb: #272525!important;
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+    border: 0;
+    position: relative;
 }
+
+.navbar-toggler span {
+    margin: 0;
+    padding: 0;
+}
+
+.toggler-icon {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: var(--light-grey);
+    border-radius: 1px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+.middle-bar {
+    margin-top: 0px;
+}
+
+
+/* State when the navbar is collapsed */
+
+.navbar-toggler.collapsed .top-bar {
+    position: absolute;
+    top: 0px;
+    transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+    position: absolute;
+    top: 10px;
+    filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+    position: absolute;
+    top: 20px;
+    transform: rotate(0deg);
+}
+
+/* when navigation is clicked */
+
+.navbar-toggler .top-bar {
+    top: inherit;
+    transform: rotate(135deg);
+}
+
+.navbar-toggler .middle-bar {
+    opacity: 0;
+    top: inherit;
+    filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+    top: inherit;
+    transform: rotate(-135deg);
+}
+
+
+
+
+
+/* Color of 3 lines */
+
+.navbar-toggler.collapsed .toggler-icon {
+    background: var(--light-grey);
+}
+
+/*nav desktop sizes*/
+@media (min-width: 992px) {
+	.navbar-toggler {
+		display: none;
+	}
+}
+
+
+
+
+   
+
+
+
+
 
 /*button styles*/
 
 .btn-primary {
-    --bs-btn-color: var(--pink)!important;
-    --bs-btn-bg: var(--dark)!important;
-    --bs-btn-border-color: var(--pink)!important;
+    --bs-btn-color: var(--pink);
+    --bs-btn-bg: var(--dark);
+    --bs-btn-border-color: var(--pink);
     --bs-btn-hover-color: #fff;
     --bs-btn-hover-bg: var(--pink);
     --bs-btn-hover-border-color: #0a58ca;
