@@ -49,6 +49,14 @@ table {
 
 /* css start */
 
+:root {
+	--pink: #DC6BAD;
+	--light-grey: #D5D5D5;
+	--white: white;
+	--dark: #272525;
+	--bs-secondary-rgb: rgb(39, 37, 37);
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: Consolas,monaco,monospace;
 }
@@ -60,19 +68,56 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background: linear-gradient(#707070 0%, #494949 0%, #434343 9.2%, #121312 36.4%, #242121 69.86%, #000 100%);
     background-attachment: fixed;
-    color: white;   
+    color: var(--white);
 }
 
 .text-primary {
-    color: white;
+    color: var(--white);
 }
 .pink {
-    color: #DC6BAD;
+    color: var(--pink);
 }
 
 a {
     text-decoration: none!important;
 }
 a:hover {
-    color:#ffc0e5;
+    color: var(--light-grey)!important;
+}
+
+.link-secondary {
+	color: var(--pink)!important;
+}
+
+/*nav styles*/
+
+.bg-secondary {
+	color: var(--dark)!important;
+}
+
+.active {
+	color: var(--pink)!important;
+}
+
+.bg-secondary {
+	--bs-secondary-rgb: #272525!important;
+}
+
+/*button styles*/
+
+.btn-primary {
+    --bs-btn-color: var(--pink)!important;
+    --bs-btn-bg: var(--dark)!important;
+    --bs-btn-border-color: var(--pink)!important;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--pink);
+    --bs-btn-hover-border-color: #0a58ca;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #0a58ca;
+    --bs-btn-active-border-color: #0a53be;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #0d6efd;
+    --bs-btn-disabled-border-color: #0d6efd;
 }
