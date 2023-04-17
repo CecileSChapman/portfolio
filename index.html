@@ -9,12 +9,14 @@
     
     <!--bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/hover.css">
     <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/a369465566.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
   <!--navbar-->
-    <nav class="navbar navbar-expand-sm bg-dark sticky-top navbar-dark">
+    <nav class="navbar navbar-expand-lg bg-dark sticky-top navbar-dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="97" height="59" viewBox="0 0 97 59">
@@ -30,7 +32,7 @@
             <span class="toggler-icon bottom-bar"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav fs-5">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="index.html">Home</a>
               </li>
@@ -49,18 +51,114 @@
       </nav>
 
     <main>
-        <h1 class="text-white">Hello there!</h1>
-        <h2 class="text-white">Welcome to my <a class="link-secondary" href="portfolio.html">portfolio</a> website</h2>
-        <p class="text-white">
-            My name is Cecile and I'm a college student with a passion for web design and development. I've always been fascinated by the way websites can be both functional and visually stunning, and I'm constantly seeking to improve my skills in both areas.
-            <br>
-            On this website, you'll find a showcase of some of my recent work, as well as information about my background and interests. I'm excited about the prospect of pursuing a career in this dynamic field and I'm eager to connect with others who share my enthusiasm. Thank you for visiting!
-        </p>
-        <a class="btn btn-primary" href="portfolio.html">Portfolio</a>
+        <div class="container-size container-sm d-flex flex-column justify-content-center">
+          <div class="d-flex align-items-end py-3">
+              <!--home page heading-->
+              <div class="">
+                <h1 class="h1 text-white">Hello there!</h1>
+              </div> 
+              <!--triangle design-->
+              <div class="px-5 flex-grow-1">
+              <svg class="triangles" xmlns="http://www.w3.org/2000/svg" width="107" height="108" viewBox="0 0 107 108">
+                            <g data-name="Component 9 – 1" transform="translate(46 54)">
+                              <g data-name="Polygon 1" transform="translate(0 28)" fill="rgba(112,112,112,0.61)">
+                                <path d="M9.5,0,19,15H0Z" stroke="none"/>
+                                <path d="M 9.5 1.868976593017578 L 1.817018508911133 14 L 17.18298149108887 14 L 9.5 1.868976593017578 M 9.5 0 L 19 15 L 0 15 L 9.5 0 Z" stroke="none" fill="rgba(112,112,112,0.51)"/>
+                              </g>
+                              <g data-name="Polygon 2" transform="translate(40)" fill="rgba(112,112,112,0.61)">
+                                <path d="M8.5,0,17,14H0Z" stroke="none"/>
+                                <path d="M 8.5 1.92686939239502 L 1.77702808380127 13 L 15.22297191619873 13 L 8.5 1.92686939239502 M 8.5 0 L 17 14 L 0 14 L 8.5 0 Z" stroke="none" fill="rgba(112,112,112,0.51)"/>
+                              </g>
+                              <g data-name="Polygon 3" transform="translate(40 36)" fill="rgba(112,112,112,0.61)">
+                                <path d="M10.5,0,21,18H0Z" stroke="none"/>
+                                <path d="M 10.5 1.984636306762695 L 1.741037368774414 17 L 19.25896263122559 17 L 10.5 1.984636306762695 M 10.5 0 L 21 18 L 0 18 L 10.5 0 Z" stroke="none" fill="rgba(112,112,112,0.51)"/>
+                              </g>
+                            </g>
+                            <g data-name="Component 9 – 2">
+                              <g data-name="Polygon 1" transform="translate(0 28)" fill="rgba(112,112,112,0.61)">
+                                <path d="M9.5,0,19,15H0Z" stroke="none"/>
+                                <path d="M 9.5 1.868976593017578 L 1.817018508911133 14 L 17.18298149108887 14 L 9.5 1.868976593017578 M 9.5 0 L 19 15 L 0 15 L 9.5 0 Z" stroke="none" fill="rgba(112,112,112,0.51)"/>
+                              </g>
+                              <g data-name="Polygon 2" transform="translate(40)" fill="rgba(112,112,112,0.61)">
+                                <path d="M8.5,0,17,14H0Z" stroke="none"/>
+                                <path d="M 8.5 1.92686939239502 L 1.77702808380127 13 L 15.22297191619873 13 L 8.5 1.92686939239502 M 8.5 0 L 17 14 L 0 14 L 8.5 0 Z" stroke="none" fill="rgba(112,112,112,0.51)"/>
+                              </g>
+                              <g data-name="Polygon 3" transform="translate(40 36)" fill="rgba(112,112,112,0.61)">
+                                <path d="M10.5,0,21,18H0Z" stroke="none"/>
+                                <path d="M 10.5 1.984636306762695 L 1.741037368774414 17 L 19.25896263122559 17 L 10.5 1.984636306762695 M 10.5 0 L 21 18 L 0 18 L 10.5 0 Z" stroke="none" fill="rgba(112,112,112,0.51)"/>
+                              </g>
+                            </g>
+                </svg> 
+              </div> 
+          </div>
+
+          <h2 class="h4">Welcome to my <a class="link-secondary" href="portfolio.html">portfolio</a> website.</h2>
+           <p class="py-2 lh-base">
+              My name is Cecile and I'm a college student with a passion for web design and development. I've always been fascinated by the way websites can be both functional and visually stunning, and I'm constantly seeking to improve my skills in both areas.
+          </p>
+          <p class="py-3 lh-base">
+              On this website, you'll find a showcase of some of my recent work, as well as information about my background and interests. I'm excited about the prospect of pursuing a career in this dynamic field and I'm eager to connect with others who share my enthusiasm. Thank you for visiting!
+          </p>
+          
+          <div class="d-flex">
+            <div class="hvr-bob">
+              <a class="btn btn-primary border-2 rounded-3 shadow-sm fs-5" href="portfolio.html">Portfolio</a>
+            </div>
+            <div class="flex-grow-1 ps-5">
+              <svg class="triangles-btm" xmlns="http://www.w3.org/2000/svg" width="107" height="108" viewBox="0 0 107 108">
+              <g data-name="Component 9 – 1" transform="translate(46 54)">
+                <g data-name="Polygon 1" transform="translate(0 28)" fill="rgba(112,112,112,0.61)">
+                  <path d="M9.5,0,19,15H0Z" stroke="none"/>
+                  <path d="M 9.5 1.868976593017578 L 1.817018508911133 14 L 17.18298149108887 14 L 9.5 1.868976593017578 M 9.5 0 L 19 15 L 0 15 L 9.5 0 Z" stroke="none" fill="rgba(112,112,112,0.51)"/>
+                </g>
+                <g data-name="Polygon 2" transform="translate(40)" fill="rgba(112,112,112,0.61)">
+                  <path d="M8.5,0,17,14H0Z" stroke="none"/>
+                  <path d="M 8.5 1.92686939239502 L 1.77702808380127 13 L 15.22297191619873 13 L 8.5 1.92686939239502 M 8.5 0 L 17 14 L 0 14 L 8.5 0 Z" stroke="none" fill="rgba(112,112,112,0.51)"/>
+                </g>
+                <g data-name="Polygon 3" transform="translate(40 36)" fill="rgba(112,112,112,0.61)">
+                  <path d="M10.5,0,21,18H0Z" stroke="none"/>
+                  <path d="M 10.5 1.984636306762695 L 1.741037368774414 17 L 19.25896263122559 17 L 10.5 1.984636306762695 M 10.5 0 L 21 18 L 0 18 L 10.5 0 Z" stroke="none" fill="rgba(112,112,112,0.51)"/>
+                </g>
+              </g>
+              <g data-name="Component 9 – 2">
+                <g data-name="Polygon 1" transform="translate(0 28)" fill="rgba(112,112,112,0.61)">
+                  <path d="M9.5,0,19,15H0Z" stroke="none"/>
+                  <path d="M 9.5 1.868976593017578 L 1.817018508911133 14 L 17.18298149108887 14 L 9.5 1.868976593017578 M 9.5 0 L 19 15 L 0 15 L 9.5 0 Z" stroke="none" fill="rgba(112,112,112,0.51)"/>
+                </g>
+                <g data-name="Polygon 2" transform="translate(40)" fill="rgba(112,112,112,0.61)">
+                  <path d="M8.5,0,17,14H0Z" stroke="none"/>
+                  <path d="M 8.5 1.92686939239502 L 1.77702808380127 13 L 15.22297191619873 13 L 8.5 1.92686939239502 M 8.5 0 L 17 14 L 0 14 L 8.5 0 Z" stroke="none" fill="rgba(112,112,112,0.51)"/>
+                </g>
+                <g data-name="Polygon 3" transform="translate(40 36)" fill="rgba(112,112,112,0.61)">
+                  <path d="M10.5,0,21,18H0Z" stroke="none"/>
+                  <path d="M 10.5 1.984636306762695 L 1.741037368774414 17 L 19.25896263122559 17 L 10.5 1.984636306762695 M 10.5 0 L 21 18 L 0 18 L 10.5 0 Z" stroke="none" fill="rgba(112,112,112,0.51)"/>
+                </g>
+              </g>
+              </svg> 
+            </div>
+          </div>
+        </div> <!--end container-->
+    
     </main>
     
-    <footer>
-
+    <footer class="d-flex sticky-bottom">
+      <div class="footer d-flex justify-content-center">
+        <svg  class="footer-shape" xmlns="http://www.w3.org/2000/svg" width="100%" height="302" viewBox="0 0 450 302" preserveAspectRatio="none">
+          <g data-name="Path 6" fill="#272525">
+            <path d="M 225 300 C 209.8247680664062 300 194.6598815917969 298.97412109375 179.9267578125 296.9508361816406 C 165.5727081298828 294.9795837402344 151.4550628662109 292.0386352539062 137.9660034179688 288.209716796875 C 124.7291793823242 284.4523620605469 111.9644088745117 279.8027038574219 100.026237487793 274.3900451660156 C 88.21229553222656 269.0336608886719 77.10588073730469 262.8841857910156 67.01547241210938 256.1124267578125 C 56.93935394287109 249.3502349853516 47.79482269287109 241.9127655029297 39.83599853515625 234.0066528320312 C 31.81676483154297 226.04052734375 24.93223571777344 217.5294189453125 19.37358856201172 208.7096405029297 C 13.72511768341064 199.7472991943359 9.388529777526855 190.3734130859375 6.484235286712646 180.8484649658203 C 3.508705854415894 171.0898284912109 2 161.0473480224609 2 151 C 2 140.9526519775391 3.508705854415894 130.9101715087891 6.484235286712646 121.1515274047852 C 9.388529777526855 111.6265869140625 13.72511768341064 102.2527084350586 19.37358856201172 93.29035186767578 C 24.93223571777344 84.47058868408203 31.81676483154297 75.95947265625 39.83599853515625 67.99335479736328 C 47.79482269287109 60.08723449707031 56.93935394287109 52.64976501464844 67.01547241210938 45.88758850097656 C 77.10588073730469 39.11582183837891 88.21229553222656 32.96635437011719 100.026237487793 27.60994148254395 C 111.9644088745117 22.19729423522949 124.7291793823242 17.54764747619629 137.9660034179688 13.79029369354248 C 151.4550628662109 9.961353302001953 165.5727081298828 7.020411968231201 179.9267578125 5.049176692962646 C 194.6598815917969 3.025882244110107 209.8247680664062 2 225 2 C 240.1752319335938 2 255.3401184082031 3.025882244110107 270.0732421875 5.049176692962646 C 284.4273071289062 7.020411968231201 298.5449523925781 9.961353302001953 312.0339965820312 13.79029369354248 C 325.2708129882812 17.54764747619629 338.0355834960938 22.19729423522949 349.9737548828125 27.60994148254395 C 361.7877197265625 32.96635437011719 372.8941040039062 39.11582183837891 382.9845275878906 45.88758850097656 C 393.0606384277344 52.64976501464844 402.2051696777344 60.08723449707031 410.1640014648438 67.99335479736328 C 418.1832275390625 75.95947265625 425.0677795410156 84.47058868408203 430.6264038085938 93.29035186767578 C 436.2748718261719 102.2527084350586 440.6114807128906 111.6265869140625 443.5157775878906 121.1515274047852 C 446.4913024902344 130.9101715087891 448 140.9526519775391 448 151 C 448 161.0473480224609 446.4913024902344 171.0898284912109 443.5157775878906 180.8484649658203 C 440.6114807128906 190.3734130859375 436.2748718261719 199.7472991943359 430.6264038085938 208.7096405029297 C 425.0677795410156 217.5294189453125 418.1832275390625 226.04052734375 410.1640014648438 234.0066528320312 C 402.2051696777344 241.9127655029297 393.0606384277344 249.3502349853516 382.9845275878906 256.1124267578125 C 372.8941040039062 262.8841857910156 361.7877197265625 269.0336608886719 349.9737548828125 274.3900451660156 C 338.0355834960938 279.8027038574219 325.2708129882812 284.4523620605469 312.0339965820312 288.209716796875 C 298.5449523925781 292.0386352539062 284.4273071289062 294.9795837402344 270.0732421875 296.9508361816406 C 255.3401184082031 298.97412109375 240.1752319335938 300 225 300 Z" stroke="none"/>
+            <path d="M 225 4 C 209.9154052734375 4 194.8421783447266 5.0196533203125 180.1988830566406 7.03057861328125 C 165.9370727539062 8.989166259765625 151.9116516113281 11.9107666015625 138.5121154785156 15.71429443359375 C 125.3706359863281 19.444580078125 112.7000122070312 24.0596923828125 100.8521118164062 29.43145751953125 C 89.13836669921875 34.74240112304688 78.12899780273438 40.8377685546875 68.1300048828125 47.54823303222656 C 58.159423828125 54.23965454101562 49.11410522460938 61.59576416015625 41.2454833984375 69.41229248046875 C 33.33328247070312 77.27206420898438 26.54376220703125 85.66458129882812 21.06558227539062 94.35670471191406 C 15.51193237304688 103.1686401367188 11.24969482421875 112.3800048828125 8.397308349609375 121.7348785400391 C 5.479461669921875 131.3042907714844 4 141.1505279541016 4 151 C 4 160.8494720458984 5.479461669921875 170.6957092285156 8.397308349609375 180.2651214599609 C 11.24969482421875 189.6199951171875 15.51193237304688 198.8313598632812 21.06558227539062 207.6432952880859 C 26.54376220703125 216.3354187011719 33.33328247070312 224.7279357910156 41.2454833984375 232.5877075195312 C 49.11410522460938 240.4042358398438 58.159423828125 247.7603454589844 68.1300048828125 254.4517669677734 C 78.12899780273438 261.1622314453125 89.13836669921875 267.2575988769531 100.8521118164062 272.5685424804688 C 112.7000122070312 277.9403076171875 125.3706359863281 282.555419921875 138.5121154785156 286.2857055664062 C 151.9116516113281 290.0892333984375 165.9370727539062 293.0108337402344 180.1988830566406 294.9694213867188 C 194.8421783447266 296.9803466796875 209.9154052734375 298 225 298 C 240.0845947265625 298 255.1578216552734 296.9803466796875 269.8011169433594 294.9694213867188 C 284.0629272460938 293.0108337402344 298.0883483886719 290.0892333984375 311.4878845214844 286.2857055664062 C 324.6293640136719 282.555419921875 337.2999877929688 277.9403076171875 349.1478881835938 272.5685424804688 C 360.8616333007812 267.2575988769531 371.8710021972656 261.1622314453125 381.8699951171875 254.4517669677734 C 391.840576171875 247.7603454589844 400.8858947753906 240.4042358398438 408.7545166015625 232.5877075195312 C 416.6667175292969 224.7279357910156 423.4562377929688 216.3354187011719 428.9344177246094 207.6432952880859 C 434.4880676269531 198.8313598632812 438.7503051757812 189.6199951171875 441.6026916503906 180.2651214599609 C 444.5205383300781 170.6957092285156 446 160.8494720458984 446 151 C 446 141.1505279541016 444.5205383300781 131.3042907714844 441.6026916503906 121.7348785400391 C 438.7503051757812 112.3800048828125 434.4880676269531 103.1686401367188 428.9344177246094 94.35670471191406 C 423.4562377929688 85.66458129882812 416.6667175292969 77.27206420898438 408.7545166015625 69.41229248046875 C 400.8858947753906 61.59576416015625 391.840576171875 54.23965454101562 381.8699951171875 47.54823303222656 C 371.8710021972656 40.8377685546875 360.8616333007812 34.74240112304688 349.1478881835938 29.43145751953125 C 337.2999877929688 24.0596923828125 324.6293640136719 19.444580078125 311.4878845214844 15.71429443359375 C 298.0883483886719 11.9107666015625 284.0629272460938 8.989166259765625 269.8011169433594 7.03057861328125 C 255.1578216552734 5.0196533203125 240.0845947265625 4 225 4 M 225 0 C 349.2640686035156 0 450 67.60499572753906 450 151 C 450 234.3949890136719 349.2640686035156 302 225 302 C 100.7359313964844 302 0 234.3949890136719 0 151 C 0 67.60499572753906 100.7359313964844 0 225 0 Z" stroke="none" fill="#dc6bad"/>
+          </g>
+        </svg>
+        <div class="align-self-end z-3 p-3 position-absolute">
+        
+          <a href="https://www.instagram.com/cealios"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+          <a href="https://www.linkedin.com/in/cecileschapman/"><i class="fa-brands fa-linkedin px-3 fa-2xl"></i></a>
+          <a href="https://github.com/CecileSChapman"><i class="fa-brands fa-github fa-2xl"></i></a>
+        
+        
+        
+        </div>
+      </div>
     </footer>
 
     <!--bootstrap-->
