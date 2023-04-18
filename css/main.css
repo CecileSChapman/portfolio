@@ -94,9 +94,10 @@ a:hover {
     color: var(--pink);
 }
 
-.link-secondary {
-	color: var(--pink);
+.pink:hover {
+    color:var(--light-grey);
 }
+
 
 /*nav styles*/
 
@@ -118,8 +119,12 @@ a:hover {
 .bg-dark {
 	background-color: var(--dark)!important;
 }
-.navbar-brand svg {
+.navbar-brand {
 	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.6));
+}
+
+.brand-hover svg:hover {
+    filter: invert(57%) sepia(19%) saturate(1385%) hue-rotate(274deg) brightness(92%) contrast(87%);
 }
 
 /*hamb menu source: https://www.youtube.com/watch?v=_MrShB9fh7U */
@@ -297,11 +302,79 @@ hr {
     color: var(--light-grey);
 }
 
-/*follow me end of contact page */
+/* portfolio styles */
 
-.follow-me {
-    
+.portfolio h4 {
+    color: var(--light-grey);
 }
+
+.portfolio a {
+    font-family: Consolas,conaco,monospace;
+}
+
+.portfolio a:hover {
+    color: var(--white);
+}
+
+/* 3d hover effect from: https://polypane.app/css-3d-transform-examples/ */
+
+
+.hover-effect div {
+    transform: perspective(1500px) rotateY(15deg);
+    transition: transform 1s ease 0s;
+
+  }
+
+ 
+  /*desktop adjustments*/
+  @media only screen and (min-width: 992px) {
+    .desktop-scaler {
+        max-width: 50%;
+    }
+
+    .hover-effect div:hover {    
+        transform: perspective(3000px) rotateY(5deg)!important;
+    } 
+  }
+ /*tablet adjustments*/
+  @media only screen and (min-width: 768px) {
+    .desktop-scaler {
+        max-width: 50%;
+    }
+    } 
+ 
+  
+
+  /*reflects hover image */
+  .hover-effect-reflected div {
+    transform: perspective(1500px) rotateY(-15deg);
+    transition: transform 1s ease 0s;
+  }
+  /*desktop adjustments*/
+  @media only screen and (min-width: 992px) {
+    .desktop-scaler {
+        max-width: 50%;
+    }
+
+    .hover-effect-reflected div:hover {    
+        transform: perspective(3000px) rotateY(5deg)!important;
+    } 
+  }
+ /*tablet adjustments*/
+  @media only screen and (min-width: 768px) {
+    .desktop-scaler {
+        max-width: 50%;
+    }
+ 
+  }
+
+  /* fixes back to top on portfolio page */
+
+  .back-to-top a:hover {
+    color: var(--pink);
+  }
+
+
 
 
 

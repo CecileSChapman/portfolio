@@ -15,43 +15,45 @@
 
 </head>
 <body>
+  <a class="visually-hidden-focusable" href="#content">Skip to main content</a>
   <!--navbar-->
-    <nav class="navbar navbar-expand-lg bg-dark sticky-top navbar-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="97" height="59" viewBox="0 0 97 59">
-              <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#_Ce_)">
-                <text data-name="&lt;Ce/&gt;" transform="translate(10 39)" fill="#d5d5d5" font-size="30" font-family="Roboto-Italic, Roboto" font-style="italic"><tspan x="0" y="0">&lt;Ce/&gt;</tspan></text>
-              </g>
-            </svg>
-          </a>
-          
-          <!--source: https://www.youtube.com/watch?v=_MrShB9fh7U-->
-          <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="toggler-icon top-bar"></span>
-            <span class="toggler-icon middle-bar"></span>
-            <span class="toggler-icon bottom-bar"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav fs-5">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="portfolio.html">Portfolio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-              </li>
-            </ul>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-dark sticky-top navbar-dark">
+          <div class="brand-hover container-fluid">
+            <a class="navbar-brand" href="index.html">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="97" height="59" viewBox="0 0 97 59">
+                <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#_Ce_)">
+                  <text data-name="&lt;Ce/&gt;" transform="translate(10 39)" fill="#d5d5d5" font-size="30" font-family="Roboto-Italic, Roboto" font-style="italic"><tspan x="0" y="0">&lt;Ce/&gt;</tspan></text>
+                </g>
+              </svg>
+            </a>
+            
+            <!--source: https://www.youtube.com/watch?v=_MrShB9fh7U-->
+            <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="toggler-icon top-bar"></span>
+              <span class="toggler-icon middle-bar"></span>
+              <span class="toggler-icon bottom-bar"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+              <ul class="navbar-nav fs-5">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </nav>
-
-    <main>
+        </nav>
+    </header>
+    <main id="content">
         <div class="container-size container-sm d-flex flex-column justify-content-center">
           <div class="d-flex align-items-end py-3">
               <!--home page heading-->        
@@ -92,7 +94,7 @@
               </div> 
           </div>
 
-          <h2 class="h4">Welcome to my <a class="link-secondary" href="portfolio.html">portfolio</a> website.</h2>
+          <h2 class="h4">Welcome to my <a class="pink" href="portfolio.html">portfolio</a> website.</h2>
            <p class="py-2 lh-base">
               My name is Cecile and I'm a college student with a passion for web design and development. I've always been fascinated by the way websites can be both functional and visually stunning, and I'm constantly seeking to improve my skills in both areas.
           </p>
